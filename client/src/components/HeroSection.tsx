@@ -46,11 +46,18 @@ export default function HeroSection() {
           className={`transition-all duration-1000 ${visible ? "opacity-100" : "opacity-0"}`}
           style={{ transitionDelay: "0.3s" }}
         >
-          <svg width="60" height="60" viewBox="0 0 60 60" fill="none" className="mx-auto" data-testid="logo-icon">
-            <circle cx="30" cy="30" r="28" stroke="#D4AF37" strokeWidth="0.5" fill="none" opacity="0.6" />
-            <circle cx="30" cy="30" r="20" stroke="#D4AF37" strokeWidth="0.3" fill="none" opacity="0.3" />
-            <text x="30" y="36" textAnchor="middle" fill="#D4AF37" fontSize="14" fontFamily="Cinzel" fontWeight="600" opacity="0.8">
-              PNS
+          <svg width="72" height="72" viewBox="0 0 72 72" fill="none" className="mx-auto" data-testid="logo-icon">
+            <polygon points="36,4 68,36 36,68 4,36" stroke="#D4AF37" strokeWidth="0.6" fill="none" opacity="0.5" />
+            <polygon points="36,12 60,36 36,60 12,36" stroke="#D4AF37" strokeWidth="0.4" fill="none" opacity="0.3" />
+            <line x1="36" y1="22" x2="36" y2="24" stroke="#D4AF37" strokeWidth="0.4" opacity="0.3" />
+            <line x1="36" y1="48" x2="36" y2="50" stroke="#D4AF37" strokeWidth="0.4" opacity="0.3" />
+            <line x1="22" y1="36" x2="24" y2="36" stroke="#D4AF37" strokeWidth="0.4" opacity="0.3" />
+            <line x1="48" y1="36" x2="50" y2="36" stroke="#D4AF37" strokeWidth="0.4" opacity="0.3" />
+            <text x="36" y="34" textAnchor="middle" fill="#D4AF37" fontSize="9" fontFamily="Cinzel" fontWeight="700" letterSpacing="2" opacity="0.7">
+              PAHLU RAM
+            </text>
+            <text x="36" y="43" textAnchor="middle" fill="#D4AF37" fontSize="6.5" fontFamily="Montserrat" fontWeight="300" letterSpacing="3" opacity="0.45">
+              SARRAF &amp; SONS
             </text>
           </svg>
         </div>
@@ -62,7 +69,7 @@ export default function HeroSection() {
           style={{ transitionDelay: "0.5s" }}
         >
           <p
-            className="font-sans uppercase tracking-[0.3em] text-gold/60 mb-6"
+            className="font-sans uppercase tracking-[0.3em] text-gold/40 mb-6"
             style={{ fontSize: "clamp(0.6rem, 1vw, 0.8rem)" }}
             data-testid="text-heritage-label"
           >
@@ -75,7 +82,7 @@ export default function HeroSection() {
           style={{ transitionDelay: "0.8s" }}
         >
           <h1
-            className="font-serif uppercase tracking-[0.08em] leading-tight text-ivory"
+            className="font-serif uppercase tracking-[0.08em] leading-tight text-ivory/80"
             style={{ fontSize: "clamp(1.8rem, 5vw, 4rem)" }}
             data-testid="text-hero-title"
           >
@@ -93,7 +100,7 @@ export default function HeroSection() {
         >
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto my-8" />
           <p
-            className="font-sans text-ivory/50 max-w-lg mx-auto leading-relaxed"
+            className="font-sans text-ivory/35 max-w-lg mx-auto leading-relaxed"
             style={{ fontSize: "clamp(0.8rem, 1.2vw, 1rem)" }}
             data-testid="text-hero-subtitle"
           >
@@ -108,7 +115,7 @@ export default function HeroSection() {
         >
           <a
             href="#gallery"
-            className="inline-block mt-10 px-8 py-3 border border-gold/40 text-gold font-sans uppercase tracking-[0.2em] transition-all duration-500 hover:border-gold hover:bg-gold/5"
+            className="inline-block mt-10 px-8 py-3 border border-gold/25 text-gold/60 font-sans uppercase tracking-[0.2em] transition-all duration-500 hover:border-gold/50 hover:bg-gold/5 hover:text-gold/80"
             style={{ fontSize: "clamp(0.65rem, 0.9vw, 0.8rem)" }}
             data-testid="link-explore-collection"
           >
