@@ -65,13 +65,13 @@ export default function HeritageTimeline() {
     <section className="relative py-20" data-testid="heritage-timeline">
       <div className="text-center mb-16 px-6">
         <p
-          className="font-sans uppercase tracking-[0.3em] text-gold/30 mb-4"
+          className="font-sans uppercase tracking-[0.3em] text-gold/50 mb-4"
           style={{ fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)" }}
         >
           Our Journey
         </p>
         <h2
-          className="font-serif uppercase tracking-[0.1em] text-ivory/70"
+          className="font-serif uppercase tracking-[0.1em] text-ivory"
           style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)" }}
           data-testid="text-timeline-heading"
         >

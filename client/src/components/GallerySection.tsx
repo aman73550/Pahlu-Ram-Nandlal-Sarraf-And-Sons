@@ -107,21 +107,21 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
       />
       <div className="absolute inset-0 flex flex-col justify-end p-5 z-10">
         <span
-          className="font-sans uppercase tracking-[0.2em] text-gold/35 mb-2"
+          className="font-sans uppercase tracking-[0.2em] text-gold/50 mb-2"
           style={{ fontSize: "clamp(0.55rem, 0.7vw, 0.65rem)" }}
           data-testid={`text-category-${item.id}`}
         >
           {item.category}
         </span>
         <h3
-          className="font-serif text-ivory/70 tracking-wide mb-1"
+          className="font-serif text-ivory tracking-wide mb-1"
           style={{ fontSize: "clamp(0.95rem, 1.5vw, 1.25rem)" }}
           data-testid={`text-gallery-title-${item.id}`}
         >
           {item.title}
         </h3>
         <p
-          className="font-sans text-ivory/30"
+          className="font-sans text-ivory/40"
           style={{ fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)" }}
         >
           {item.description}
@@ -148,13 +148,13 @@ export default function GallerySection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p
-            className="font-sans uppercase tracking-[0.3em] text-gold/30 mb-4"
+            className="font-sans uppercase tracking-[0.3em] text-gold/50 mb-4"
             style={{ fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)" }}
           >
             Our Collections
           </p>
           <h2
-            className="font-serif uppercase tracking-[0.1em] text-ivory/70"
+            className="font-serif uppercase tracking-[0.1em] text-ivory"
             style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)" }}
             data-testid="text-gallery-heading"
           >

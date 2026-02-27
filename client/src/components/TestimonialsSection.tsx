@@ -87,7 +87,7 @@ function TestimonialCard({ item, index }: { item: typeof testimonials[0]; index:
     >
       <StarRating rating={item.rating} />
       <p
-        className="font-sans text-ivory/40 mt-4 mb-5 leading-relaxed"
+        className="font-sans text-ivory/60 mt-4 mb-5 leading-relaxed"
         style={{ fontSize: "clamp(0.8rem, 1vw, 0.9rem)" }}
         data-testid={`text-review-${item.id}`}
       >
@@ -95,7 +95,7 @@ function TestimonialCard({ item, index }: { item: typeof testimonials[0]; index:
       </p>
       <div className="flex items-center justify-between gap-3">
         <span
-          className="font-sans font-medium text-ivory/55"
+          className="font-sans font-medium text-ivory/80"
           style={{ fontSize: "clamp(0.75rem, 0.9vw, 0.85rem)" }}
           data-testid={`text-reviewer-${item.id}`}
         >
@@ -128,13 +128,13 @@ export default function TestimonialsSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p
-            className="font-sans uppercase tracking-[0.3em] text-gold/30 mb-4"
+            className="font-sans uppercase tracking-[0.3em] text-gold/50 mb-4"
             style={{ fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)" }}
           >
             Verified Excellence
           </p>
           <h2
-            className="font-serif uppercase tracking-[0.1em] text-ivory/70"
+            className="font-serif uppercase tracking-[0.1em] text-ivory"
             style={{ fontSize: "clamp(1.5rem, 3vw, 2.5rem)" }}
             data-testid="text-testimonials-heading"
           >

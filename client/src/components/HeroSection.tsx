@@ -12,7 +12,7 @@ export default function HeroSection() {
   return (
     <section
       ref={ref}
-      className="relative w-full flex items-center justify-center overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-center overflow-hidden"
       style={{
         height: "100vh",
         minHeight: "600px",
@@ -41,9 +41,9 @@ export default function HeroSection() {
         />
       </div>
 
-      <div className="absolute top-8 left-1/2 -translate-x-1/2" style={{ marginTop: "clamp(28px, 3.5vw, 36px)" }}>
+      <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 max-w-4xl mx-auto">
         <div
-          className={`transition-all duration-1000 ${visible ? "opacity-100" : "opacity-0"}`}
+          className={`transition-all duration-1000 mb-8 ${visible ? "opacity-100" : "opacity-0"}`}
           style={{ transitionDelay: "0.3s" }}
         >
           <svg width="72" height="72" viewBox="0 0 72 72" fill="none" className="mx-auto" data-testid="logo-icon">
@@ -61,15 +61,13 @@ export default function HeroSection() {
             </text>
           </svg>
         </div>
-      </div>
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <div
           className={`transition-all duration-1000 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
           style={{ transitionDelay: "0.5s" }}
         >
           <p
-            className="font-sans uppercase tracking-[0.3em] text-gold/40 mb-6"
+            className="font-sans uppercase tracking-[0.3em] text-gold/60 mb-6"
             style={{ fontSize: "clamp(0.6rem, 1vw, 0.8rem)" }}
             data-testid="text-heritage-label"
           >
@@ -82,7 +80,7 @@ export default function HeroSection() {
           style={{ transitionDelay: "0.8s" }}
         >
           <h1
-            className="font-serif uppercase tracking-[0.08em] leading-tight text-ivory/80"
+            className="font-serif uppercase tracking-[0.08em] leading-tight text-ivory"
             style={{ fontSize: "clamp(1.8rem, 5vw, 4rem)" }}
             data-testid="text-hero-title"
           >
@@ -100,7 +98,7 @@ export default function HeroSection() {
         >
           <div className="w-16 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto my-8" />
           <p
-            className="font-sans text-ivory/35 max-w-lg mx-auto leading-relaxed"
+            className="font-sans text-ivory/50 max-w-lg mx-auto leading-relaxed"
             style={{ fontSize: "clamp(0.8rem, 1.2vw, 1rem)" }}
             data-testid="text-hero-subtitle"
           >
@@ -110,12 +108,12 @@ export default function HeroSection() {
         </div>
 
         <div
-          className={`transition-all duration-1000 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+          className={`transition-all duration-1000 flex justify-center w-full ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
           style={{ transitionDelay: "1.4s" }}
         >
           <a
             href="#gallery"
-            className="inline-block mt-10 px-8 py-3 border border-gold/25 text-gold/60 font-sans uppercase tracking-[0.2em] transition-all duration-500 hover:border-gold/50 hover:bg-gold/5 hover:text-gold/80"
+            className="mt-10 px-10 py-3.5 border border-gold/40 text-gold font-sans uppercase tracking-[0.2em] transition-all duration-500 hover:border-gold hover:bg-gold/5 text-center"
             style={{ fontSize: "clamp(0.65rem, 0.9vw, 0.8rem)" }}
             data-testid="link-explore-collection"
           >
