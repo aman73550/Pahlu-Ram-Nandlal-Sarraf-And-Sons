@@ -71,7 +71,7 @@ export default function HeroSection() {
           style={{ transitionDelay: "0.5s" }}
         >
           <p
-            className="font-cursive text-gold/70 mb-4"
+            className="font-accent italic text-gold/70 mb-4"
             style={{ fontSize: "clamp(1.2rem, 2.5vw, 2rem)" }}
             data-testid="text-cursive-tagline"
           >
@@ -135,7 +135,7 @@ export default function HeroSection() {
           style={{ transitionDelay: "1.5s" }}
         >
           <p
-            className="font-cursive text-ivory/30 mt-6"
+            className="font-accent italic text-ivory/30 mt-6"
             style={{ fontSize: "clamp(0.9rem, 1.5vw, 1.2rem)" }}
             data-testid="text-cursive-quote"
           >

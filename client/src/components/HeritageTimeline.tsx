@@ -65,7 +65,7 @@ export default function HeritageTimeline() {
     <section className="relative py-20" data-testid="heritage-timeline">
       <div className="text-center mb-16 px-6">
         <p
-          className="font-cursive text-gold/60 mb-3"
+          className="font-accent italic text-gold/60 mb-3"
           style={{ fontSize: "clamp(1.2rem, 2vw, 1.6rem)" }}
           data-testid="text-timeline-cursive"
         >

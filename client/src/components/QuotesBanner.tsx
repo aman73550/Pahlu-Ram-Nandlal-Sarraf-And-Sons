@@ -87,7 +87,7 @@ export default function QuotesBanner() {
               }}
             >
               <p
-                className="font-cursive text-ivory/70 leading-relaxed mb-6 px-4"
+                className="font-accent italic text-ivory/70 leading-relaxed mb-6 px-4"
                 style={{ fontSize: "clamp(1.3rem, 2.8vw, 2.2rem)" }}
                 data-testid={`text-quote-${i}`}
               >

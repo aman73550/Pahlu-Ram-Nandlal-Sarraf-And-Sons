@@ -39,7 +39,7 @@ export default function PhilosophySection() {
       <div className="relative z-10 max-w-5xl mx-auto">
         <div className={`text-center mb-16 transition-all duration-1000 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}>
           <p
-            className="font-cursive text-gold/60 mb-3"
+            className="font-accent italic text-gold/60 mb-3"
             style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)" }}
             data-testid="text-philosophy-cursive"
           >
@@ -64,7 +64,7 @@ export default function PhilosophySection() {
               data-testid={`card-philosophy-${i}`}
             >
               <p
-                className="font-cursive text-gold mb-3"
+                className="font-accent italic text-gold mb-3"
                 style={{ fontSize: "clamp(1.6rem, 2.5vw, 2.2rem)" }}
               >
                 {pillar.cursiveTitle}
