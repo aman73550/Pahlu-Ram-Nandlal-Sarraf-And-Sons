@@ -4,6 +4,8 @@ import GallerySection from "@/components/GallerySection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import HeritageTimeline from "@/components/HeritageTimeline";
 import CertificationBadges from "@/components/CertificationBadges";
+import PhilosophySection from "@/components/PhilosophySection";
+import QuotesBanner from "@/components/QuotesBanner";
 import RoyalTrioNav from "@/components/RoyalTrioNav";
 import Footer from "@/components/Footer";
 import LuxuryCursor from "@/components/LuxuryCursor";
@@ -15,7 +17,9 @@ export default function Home() {
       <GoldTicker />
       <HeroSection />
       <CertificationBadges />
+      <PhilosophySection />
       <GallerySection />
+      <QuotesBanner />
       <TestimonialsSection />
       <HeritageTimeline />
       <Footer />

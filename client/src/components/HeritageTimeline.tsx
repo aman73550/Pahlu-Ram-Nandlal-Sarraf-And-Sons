@@ -65,10 +65,11 @@ export default function HeritageTimeline() {
     <section className="relative py-20" data-testid="heritage-timeline">
       <div className="text-center mb-16 px-6">
         <p
-          className="font-sans uppercase tracking-[0.3em] text-gold/50 mb-4"
-          style={{ fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)" }}
+          className="font-cursive text-gold/60 mb-3"
+          style={{ fontSize: "clamp(1.2rem, 2vw, 1.6rem)" }}
+          data-testid="text-timeline-cursive"
         >
-          Our Journey
+          Sixty Years & Counting
         </p>
         <h2
           className="font-serif uppercase tracking-[0.1em] text-ivory"

@@ -91,6 +91,7 @@ export default {
       fontFamily: {
         sans: ["'Montserrat'", "sans-serif"],
         serif: ["'Cinzel'", "serif"],
+        cursive: ["'Great Vibes'", "cursive"],
         mono: ["var(--font-mono)"],
       },
       fontSize: {
