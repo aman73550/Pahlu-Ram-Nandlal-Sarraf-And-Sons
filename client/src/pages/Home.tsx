@@ -1,3 +1,4 @@
+import Header from "@/components/Header";
 import GoldTicker from "@/components/GoldTicker";
 import HeroSection from "@/components/HeroSection";
 import GallerySection from "@/components/GallerySection";
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <div className="noise-texture luxury-cursor-area min-h-screen" style={{ background: "#050505" }}>
       <LuxuryCursor />
+      <Header />
       <GoldTicker />
       <HeroSection />
       <CertificationBadges />

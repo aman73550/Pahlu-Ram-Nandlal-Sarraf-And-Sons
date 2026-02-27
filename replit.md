@@ -14,14 +14,22 @@ Ultra-luxury single-page landing page for a premium jewelry showroom in Siddhart
 - **Font Scaling**: All fonts use clamp() for responsive sizing, no overlapping text on mobile
 - **Dark-only theme**: The site is always dark (luxury aesthetic)
 
+## Fonts
+- Cinzel (serif, headers) — `font-serif`
+- Montserrat (sans, body/nav) — `font-sans`
+- Playfair Display (accent, elegant italic) — `font-accent`
+
 ## Components
-- `GoldTicker` — Scrolling top bar with 22K/24K gold rates
-- `HeroSection` — Full-height hero with animated gold text
+- `Header` — Fixed sticky header below ticker with logo, phone, location; glassmorphism on scroll
+- `GoldTicker` — Scrolling top bar with 22K/24K gold rates (z-[100], topmost)
+- `HeroSection` — Full-height hero with shop name, tagline, "Explore Collection" + "Get Directions" buttons
+- `CertificationBadges` — BIS Hallmarked, GIA Certified, Secure EMI
+- `PhilosophySection` — Purity, Craftsmanship, Trust pillars
 - `GallerySection` — Masonry grid of jewelry collections (3 categories)
+- `QuotesBanner` — Rotating elegant quotes with auto-play
 - `TestimonialsSection` — Bento grid of 4-5 star verified reviews
 - `HeritageTimeline` — Horizontal scroll timeline from 1961 to present
-- `CertificationBadges` — BIS Hallmarked, GIA Certified, Secure EMI
-- `RoyalTrioNav` — Floating bottom pill nav (Maps, Call, WhatsApp)
+- `RoyalTrioNav` — Full-width bottom nav bar (Maps, Call, WhatsApp)
 - `Footer` — Developer credit with gold-to-silver gradient
 - `LuxuryCursor` — Custom gold dot cursor on desktop
 
