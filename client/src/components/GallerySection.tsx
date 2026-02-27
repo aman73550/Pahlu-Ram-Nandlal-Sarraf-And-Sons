@@ -78,16 +78,14 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
       data-testid={`card-gallery-${item.id}`}
     >
       <img
-        src={`https://images.unsplash.com/photo-${
-          [
-            "1515562141207-82d85b407d3f",
-            "1605100804763-247f67b3557e",
-            "1611652022419-a9419f74343d",
-            "1535632066927-ab7c9ab60908",
-            "1573408301185-9146fe634ad0",
-            "1602751584552-8ba73aad10e1",
-          ][index]
-        }?w=600&h=750&fit=crop&q=80`}
+        src={[
+          "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=600&h=750&fit=crop&q=80",
+          "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=600&h=750&fit=crop&q=80",
+          "https://images.unsplash.com/photo-1611652022419-a9419f74343d?w=600&h=750&fit=crop&q=80",
+          "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=600&h=750&fit=crop&q=80",
+          "https://images.unsplash.com/photo-1602751584552-8ba73aad10e1?w=600&h=750&fit=crop&q=80",
+          "https://images.unsplash.com/photo-1603561591411-07134e71a2a9?w=600&h=750&fit=crop&q=80",
+        ][index]}
         alt={item.title}
         loading="lazy"
         className="absolute inset-0 w-full h-full object-cover opacity-40 group-hover:opacity-50 transition-opacity duration-700 scale-105 group-hover:scale-100"
