@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
+const QUOTES_BG = "https://images.unsplash.com/photo-1601121141461-9d6647bca1ed?w=1920&q=80&auto=format";
+
 const quotes = [
   {
     text: "Jewelry is not just an accessory. It is a memory, a legacy, a promise.",
@@ -39,28 +41,34 @@ export default function QuotesBanner() {
   return (
     <section
       ref={ref}
-      className="relative py-24 px-6 overflow-hidden"
+      className="relative py-28 px-6 overflow-hidden"
       data-testid="quotes-banner"
     >
-      <div
-        className="absolute inset-0"
-        style={{
-          background: "linear-gradient(180deg, #050505 0%, #0a0805 50%, #050505 100%)",
-        }}
-      />
-      <div
-        className="absolute inset-0"
-        style={{
-          background: "radial-gradient(ellipse 50% 60% at 50% 50%, rgba(212,175,55,0.04) 0%, transparent 70%)",
-        }}
-      />
+      <div className="absolute inset-0">
+        <img
+          src={QUOTES_BG}
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: "brightness(0.1) saturate(0.3) sepia(0.25)" }}
+          loading="lazy"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: `
+              linear-gradient(180deg, #050505 0%, rgba(5,5,5,0.7) 25%, rgba(5,5,5,0.65) 75%, #050505 100%),
+              radial-gradient(ellipse 50% 60% at 50% 50%, rgba(212,175,55,0.06) 0%, transparent 70%)
+            `,
+          }}
+        />
+      </div>
 
-      <div className="absolute left-6 md:left-16 top-1/2 -translate-y-1/2 opacity-10">
+      <div className="absolute left-6 md:left-16 top-1/2 -translate-y-1/2 opacity-10 z-10">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="#D4AF37">
           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
         </svg>
       </div>
-      <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 opacity-10 rotate-180">
+      <div className="absolute right-6 md:right-16 top-1/2 -translate-y-1/2 opacity-10 rotate-180 z-10">
         <svg width="48" height="48" viewBox="0 0 24 24" fill="#D4AF37">
           <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z" />
         </svg>
@@ -87,14 +95,14 @@ export default function QuotesBanner() {
               }}
             >
               <p
-                className="font-accent italic text-ivory/70 leading-relaxed mb-6 px-4"
-                style={{ fontSize: "clamp(1.3rem, 2.8vw, 2.2rem)" }}
+                className="font-accent italic text-ivory/80 leading-relaxed mb-6 px-4"
+                style={{ fontSize: "clamp(1.3rem, 2.8vw, 2.2rem)", textShadow: "0 2px 20px rgba(0,0,0,0.9)" }}
                 data-testid={`text-quote-${i}`}
               >
                 {quote.text}
               </p>
               <p
-                className="font-sans uppercase tracking-[0.25em] text-gold/40"
+                className="font-sans uppercase tracking-[0.25em] text-gold/50"
                 style={{ fontSize: "clamp(0.55rem, 0.75vw, 0.65rem)" }}
               >
                 &mdash; {quote.attribution}

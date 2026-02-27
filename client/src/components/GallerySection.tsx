@@ -142,8 +142,23 @@ function GalleryCard({ item, index }: { item: typeof galleryItems[0]; index: num
 
 export default function GallerySection() {
   return (
-    <section id="gallery" className="relative py-20 px-6 md:px-12 lg:px-20" data-testid="gallery-section">
-      <div className="max-w-7xl mx-auto">
+    <section id="gallery" className="relative py-20 px-6 md:px-12 lg:px-20 overflow-hidden" data-testid="gallery-section">
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1492707892479-7bc8d5a4ee93?w=1920&q=80&auto=format"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: "brightness(0.05) saturate(0.3) sepia(0.15)" }}
+          loading="lazy"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(180deg, #050505 0%, rgba(5,5,5,0.85) 15%, rgba(5,5,5,0.85) 85%, #050505 100%)",
+          }}
+        />
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p
             className="font-accent italic text-gold/60 mb-3"

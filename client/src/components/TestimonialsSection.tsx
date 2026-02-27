@@ -124,8 +124,23 @@ function TestimonialCard({ item, index }: { item: typeof testimonials[0]; index:
 
 export default function TestimonialsSection() {
   return (
-    <section className="relative py-20 px-6 md:px-12 lg:px-20" data-testid="testimonials-section">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-20 px-6 md:px-12 lg:px-20 overflow-hidden" data-testid="testimonials-section">
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?w=1920&q=80&auto=format"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: "brightness(0.06) saturate(0.3) sepia(0.15)" }}
+          loading="lazy"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(180deg, #050505 0%, rgba(5,5,5,0.8) 20%, rgba(5,5,5,0.8) 80%, #050505 100%)",
+          }}
+        />
+      </div>
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <p
             className="font-accent italic text-gold/60 mb-3"

@@ -62,8 +62,23 @@ function TimelineMarker({ event, index }: { event: typeof timelineEvents[0]; ind
 
 export default function HeritageTimeline() {
   return (
-    <section className="relative py-20" data-testid="heritage-timeline">
-      <div className="text-center mb-16 px-6">
+    <section className="relative py-20 overflow-hidden" data-testid="heritage-timeline">
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=1920&q=80&auto=format"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+          style={{ filter: "brightness(0.06) saturate(0.3) sepia(0.2)" }}
+          loading="lazy"
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background: "linear-gradient(180deg, #050505 0%, rgba(5,5,5,0.8) 15%, rgba(5,5,5,0.75) 85%, #050505 100%)",
+          }}
+        />
+      </div>
+      <div className="relative z-10 text-center mb-16 px-6">
         <p
           className="font-accent italic text-gold/60 mb-3"
           style={{ fontSize: "clamp(1.2rem, 2vw, 1.6rem)" }}
@@ -81,7 +96,7 @@ export default function HeritageTimeline() {
         <div className="w-12 h-px bg-gradient-to-r from-transparent via-gold to-transparent mx-auto mt-6" />
       </div>
 
-      <div className="overflow-x-auto scrollbar-hide pb-8">
+      <div className="relative z-10 overflow-x-auto scrollbar-hide pb-8">
         <div className="flex gap-0 px-12 min-w-max items-start pt-4">
           {timelineEvents.map((event, i) => (
             <TimelineMarker key={i} event={event} index={i} />
