@@ -12,7 +12,7 @@ export default function RoyalTrioNav() {
           background: "linear-gradient(to top, rgba(5,5,5,0.95) 0%, rgba(10,10,10,0.9) 60%, rgba(15,15,15,0.8) 100%)",
           backdropFilter: "blur(24px)",
           WebkitBackdropFilter: "blur(24px)",
-          borderTop: "0.5px solid rgba(212,175,55,0.15)",
+          borderTop: "0.5px solid rgba(212,175,55,0.3)",
           boxShadow: "0 -4px 30px rgba(0,0,0,0.5), 0 -1px 10px rgba(212,175,55,0.05)",
           padding: "clamp(4px, 1vw, 8px) 0",
         }}
@@ -27,18 +27,18 @@ export default function RoyalTrioNav() {
           >
             <MapPin
               size={17}
-              className="text-gold/50 group-hover:text-gold/80 transition-colors duration-300"
+              className="text-gold group-hover:text-gold-light transition-colors duration-300"
               strokeWidth={1.5}
             />
             <span
-              className="font-sans uppercase tracking-[0.15em] text-ivory/45 group-hover:text-ivory/70 transition-colors duration-300"
+              className="font-sans uppercase tracking-[0.15em] text-ivory/80 group-hover:text-ivory transition-colors duration-300"
               style={{ fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)" }}
             >
               Maps
             </span>
           </button>
 
-          <div className="w-px bg-gold/10 my-3" />
+          <div className="w-px bg-gold/20 my-3" />
 
           <a
             href="tel:7355048683"
@@ -48,18 +48,18 @@ export default function RoyalTrioNav() {
           >
             <Phone
               size={17}
-              className="text-gold/50 group-hover:text-gold/80 transition-colors duration-300"
+              className="text-gold group-hover:text-gold-light transition-colors duration-300"
               strokeWidth={1.5}
             />
             <span
-              className="font-sans uppercase tracking-[0.15em] text-ivory/45 group-hover:text-ivory/70 transition-colors duration-300"
+              className="font-sans uppercase tracking-[0.15em] text-ivory/80 group-hover:text-ivory transition-colors duration-300"
               style={{ fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)" }}
             >
               Call
             </span>
           </a>
 
-          <div className="w-px bg-gold/10 my-3" />
+          <div className="w-px bg-gold/20 my-3" />
 
           <a
             href="https://wa.me/917355048683"
@@ -71,11 +71,11 @@ export default function RoyalTrioNav() {
           >
             <MessageCircle
               size={17}
-              className="text-gold/50 group-hover:text-gold/80 transition-colors duration-300"
+              className="text-gold group-hover:text-gold-light transition-colors duration-300"
               strokeWidth={1.5}
             />
             <span
-              className="font-sans uppercase tracking-[0.15em] text-ivory/45 group-hover:text-ivory/70 transition-colors duration-300"
+              className="font-sans uppercase tracking-[0.15em] text-ivory/80 group-hover:text-ivory transition-colors duration-300"
               style={{ fontSize: "clamp(0.6rem, 0.8vw, 0.7rem)" }}
             >
               Chat
