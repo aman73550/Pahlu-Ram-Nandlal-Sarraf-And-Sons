@@ -1,0 +1,38 @@
+This is the Master Blueprint. It synthesizes the ultra-luxury aesthetic, the "Royal Trio" navigation, the "Aman Gupta" developer signature, and the specific requirement to filter for high-quality social proof.
+
+Copy and paste the entire block below into AI Studio.
+
+Final Master Prompt: The Digital Flagship for Pahlu Ram Nandlal Sarraf And Sons
+Core Identity & Objective
+Build a high-end, responsive, and "Ultra-Luxurious" single-page landing page using React and Tailwind CSS. The site is for a premium jewelry showroom in Siddharth Nagar. The vibe must be "Modern Opulence"—combining 60+ years of heritage with 2026 digital motion design.
+
+1. Visual & Aesthetic Architecture
+Palette: Background in Obsidian Black (#050505) with a subtle noise texture (3% opacity) to mimic velvet. Accents in Champagne Gold (#D4AF37) and Ivory (#FCFBF7).
+
+Typography: Use 'Cinzel' for all H1/H2 headers (all-caps, tracked out). Use 'Montserrat' for body text and navigation.
+
+Motion: Implement "Breathe" animations. Elements should scale up (95% to 100%) and fade in over 0.8s as they enter the viewport. No harsh jumps.
+
+2. Premium Section Details
+Hero Section: Full-height. Centered minimalist typography: "Crafting Legacies in Gold & Diamonds Since 1961." Use a background video loop of high-contrast jewelry sparkle or a parallax macro-shot of a gold necklace.
+
+Curated Gallery: A "Masonry Grid" layout.
+
+Categories: Bridal Heritage, Timeless Diamonds, Fine Gold.
+
+Interaction: Hovering over an item swaps the image for a subtle 360° video rotation.
+
+Disclaimer: Directly under the gallery, add: "Note: All exquisite designs are subject to availability. Please visit our showroom for live pricing." (Italicized, 12px Montserrat).
+
+Social Proof (Verified Excellence):
+
+Filter Logic: ONLY show reviews with a 4-star or 5-star rating. * Layout: A "Bento Box" grid of testimonial cards. Each card features a gold star rating, the reviewer's name, and a "Google Verified" badge. Use a backdrop-filter (blur 10px) on the cards.
+
+The Heritage Timeline: A minimalist horizontal scroll titled "A Legacy of Trust." Markers include: "1961: The First Foundation," "Present: Siddharth Nagar’s Premium Destination."
+
+3. The "Royal Trio" Navigation (Glassmorphism)
+The Capsule: A floating pill-shaped bar 20px from the bottom.
+
+Styling: background: rgba(15, 15, 15, 0.8); backdrop-filter: blur(20px); border: 0.5px solid #D4AF37;
+
+The Three Pillars (Equal Width):
