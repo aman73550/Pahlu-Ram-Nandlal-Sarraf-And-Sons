@@ -41,7 +41,7 @@ export default function RoyalTrioNav() {
           <div className="w-px bg-gold/20 my-3" />
 
           <a
-            href="tel:7355048683"
+            href="tel:09236058261"
             className="flex-1 flex items-center justify-center gap-2 rounded-md transition-all duration-300 hover:bg-gold/8 active:bg-gold/12 group"
             style={{ minHeight: "48px" }}
             data-testid="link-call"
@@ -62,7 +62,7 @@ export default function RoyalTrioNav() {
           <div className="w-px bg-gold/20 my-3" />
 
           <a
-            href="https://wa.me/917355048683"
+            href="https://wa.me/919236058261"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-1 flex items-center justify-center gap-2 rounded-md transition-all duration-300 hover:bg-gold/8 active:bg-gold/12 group"
@@ -129,8 +129,8 @@ export default function RoyalTrioNav() {
               </div>
               <div className="flex items-center gap-3">
                 <Phone size={14} className="text-gold/40 flex-shrink-0" />
-                <a href="tel:7355048683" className="font-sans text-gold/50 hover:text-gold/70 transition-colors" style={{ fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)" }}>
-                  +91 73550 48683
+                <a href="tel:09236058261" className="font-sans text-gold/50 hover:text-gold/70 transition-colors" style={{ fontSize: "clamp(0.7rem, 0.9vw, 0.8rem)" }}>
+                  +91 92360 58261
                 </a>
               </div>
               <div className="flex items-center gap-3">

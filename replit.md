@@ -26,8 +26,8 @@ Ultra-luxury single-page landing page for a premium jewelry showroom in Siddhart
 - `LuxuryCursor` — Custom gold dot cursor on desktop
 
 ## Contact Info
-- Phone: 7355048683
-- WhatsApp: https://wa.me/917355048683
+- Phone: 09236058261
+- WhatsApp: https://wa.me/919236058261
 - Location: Siddharth Nagar, Uttar Pradesh
 
 ## Developer Credit
