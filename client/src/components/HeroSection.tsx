@@ -156,25 +156,12 @@ export default function HeroSection() {
         </div>
 
         <div
-          className={`transition-all duration-1000 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
-          style={{ transitionDelay: "1.4s" }}
-        >
-          <p
-            className="font-accent italic text-ivory/30 mt-4"
-            style={{ fontSize: "clamp(0.85rem, 1.3vw, 1.1rem)" }}
-            data-testid="text-cursive-quote"
-          >
-            "Adorning generations with timeless elegance"
-          </p>
-        </div>
-
-        <div
           className={`transition-all duration-1000 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
-          style={{ transitionDelay: "1.7s" }}
+          style={{ transitionDelay: "1.4s" }}
         >
           <a
             href="#gallery"
-            className="mt-8 px-10 py-3.5 border border-gold/40 text-gold font-sans uppercase tracking-[0.2em] transition-all duration-500 hover:border-gold hover:bg-gold/10 text-center backdrop-blur-sm"
+            className="mt-6 px-10 py-3.5 border border-gold/40 text-gold font-sans uppercase tracking-[0.2em] transition-all duration-500 hover:border-gold hover:bg-gold/10 text-center backdrop-blur-sm"
             style={{ fontSize: "clamp(0.65rem, 0.9vw, 0.8rem)", background: "rgba(5,5,5,0.3)" }}
             data-testid="link-explore-collection"
           >
@@ -184,7 +171,7 @@ export default function HeroSection() {
             href="https://maps.google.com/?q=Pahlu+Ram+Nandlal+Sarraf+And+Sons+Siddharth+Nagar"
             target="_blank"
             rel="noopener noreferrer"
-            className="mt-4 sm:mt-8 px-8 py-3.5 bg-gold/10 border border-gold/30 text-gold font-sans uppercase tracking-[0.2em] transition-all duration-500 hover:bg-gold/20 hover:border-gold/60 text-center flex items-center gap-2 backdrop-blur-sm"
+            className="mt-3 sm:mt-6 px-8 py-3.5 bg-gold/10 border border-gold/30 text-gold font-sans uppercase tracking-[0.2em] transition-all duration-500 hover:bg-gold/20 hover:border-gold/60 text-center flex items-center gap-2 backdrop-blur-sm"
             style={{ fontSize: "clamp(0.65rem, 0.9vw, 0.8rem)" }}
             data-testid="link-get-directions"
           >
@@ -192,17 +179,30 @@ export default function HeroSection() {
             Get Directions
           </a>
         </div>
+
+        <div
+          className={`transition-all duration-1000 ${visible ? "opacity-100 scale-100" : "opacity-0 scale-95"}`}
+          style={{ transitionDelay: "1.7s" }}
+        >
+          <p
+            className="font-accent italic text-ivory/25 mt-8"
+            style={{ fontSize: "clamp(0.85rem, 1.3vw, 1.1rem)" }}
+            data-testid="text-cursive-quote"
+          >
+            "Adorning generations with timeless elegance"
+          </p>
+        </div>
       </div>
 
       <div
-        className={`absolute bottom-10 left-1/2 -translate-x-1/2 transition-all duration-1000 ${visible ? "opacity-60" : "opacity-0"}`}
+        className={`absolute bottom-4 left-1/2 -translate-x-1/2 transition-all duration-1000 ${visible ? "opacity-50" : "opacity-0"}`}
         style={{ transitionDelay: "2.2s" }}
       >
-        <div className="flex flex-col items-center gap-2">
-          <span className="text-ivory/30 font-sans uppercase tracking-[0.2em]" style={{ fontSize: "clamp(0.55rem, 0.7vw, 0.65rem)" }}>
+        <div className="flex flex-col items-center gap-1">
+          <span className="text-ivory/25 font-sans uppercase tracking-[0.2em]" style={{ fontSize: "clamp(0.5rem, 0.6vw, 0.55rem)" }}>
             Scroll
           </span>
-          <div className="w-px h-8 bg-gradient-to-b from-gold/40 to-transparent" />
+          <div className="w-px h-5 bg-gradient-to-b from-gold/30 to-transparent" />
         </div>
       </div>
     </section>
