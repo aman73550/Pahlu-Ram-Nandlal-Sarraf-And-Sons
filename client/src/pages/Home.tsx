@@ -9,6 +9,7 @@ import PhilosophySection from "@/components/PhilosophySection";
 import QuotesBanner from "@/components/QuotesBanner";
 import RoyalTrioNav from "@/components/RoyalTrioNav";
 import Footer from "@/components/Footer";
+import DeveloperCredit from "@/components/DeveloperCredit";
 import LuxuryCursor from "@/components/LuxuryCursor";
 
 export default function Home() {
@@ -25,6 +26,7 @@ export default function Home() {
       <TestimonialsSection />
       <HeritageTimeline />
       <Footer />
+      <DeveloperCredit />
       <RoyalTrioNav />
     </div>
   );

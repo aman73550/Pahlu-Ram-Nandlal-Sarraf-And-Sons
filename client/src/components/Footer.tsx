@@ -21,29 +21,7 @@ export default function Footer() {
         <div className="w-8 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent mx-auto mb-8" />
 
         <p
-          className="font-sans"
-          style={{
-            fontSize: "clamp(0.55rem, 0.7vw, 0.6rem)",
-            background: "linear-gradient(135deg, rgba(212,175,55,0.25) 0%, rgba(192,192,192,0.18) 50%, rgba(212,175,55,0.25) 100%)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            backgroundClip: "text",
-          }}
-          data-testid="text-developer-credit"
-        >
-          Digital Architecture by Aman Gupta |{" "}
-          <a
-            href="https://instagram.com/amangupta.yt"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:opacity-80 transition-opacity"
-          >
-            @amangupta.yt
-          </a>
-        </p>
-
-        <p
-          className="font-sans text-ivory/10 mt-6"
+          className="font-sans text-ivory/10"
           style={{ fontSize: "clamp(0.5rem, 0.65vw, 0.55rem)" }}
         >
           &copy; {new Date().getFullYear()} All Rights Reserved
